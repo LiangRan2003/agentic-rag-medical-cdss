@@ -9,6 +9,9 @@ pinned: false
 ---
 # ⚕️ 感染科辅助诊疗智能体 (Infectious Disease CDSS Agent)
 
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/liangran0103/agentic-rag-medical-cdss)
+*(点击上方 Badge 体验在线 Live Demo)*
+
 基于大语言模型与多智能体协同 (Multi-Agent Workflows) 构建的垂直医疗领域 RAG 系统，旨在提供高度准确、无幻觉的临床决策支持 (CDSS)。
 
 ## 🌟 项目亮点
