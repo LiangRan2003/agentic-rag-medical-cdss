@@ -1,3 +1,12 @@
+---
+title: Agentic RAG Medical CDSS
+emoji: ⚕️
+colorFrom: blue
+colorTo: green
+sdk: streamlit
+app_file: app.py
+pinned: false
+---
 # ⚕️ 感染科辅助诊疗智能体 (Infectious Disease CDSS Agent)
 
 基于大语言模型与多智能体协同 (Multi-Agent Workflows) 构建的垂直医疗领域 RAG 系统，旨在提供高度准确、无幻觉的临床决策支持 (CDSS)。
