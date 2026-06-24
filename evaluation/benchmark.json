@@ -1,0 +1,83 @@
+[
+  {
+    "id": "grounded-01",
+    "kind": "grounded",
+    "source": "丙型肝炎防治指南（2022年版）.pdf",
+    "question": "慢性丙型肝炎肝纤维化消退或逆转的组织学标志是什么？",
+    "reference_answer": "非连续纤维间隔、非固定性纤维间隔的出现是肝纤维化消退或逆转的标志。",
+    "evidence_quote": "组织学上非连续纤维间隔（interrupted septa）、非固定性纤维间隔（floating septa）的出现是肝纤维化消退或逆转的标志",
+    "location": "第6页，片段1"
+  },
+  {
+    "id": "grounded-02",
+    "kind": "grounded",
+    "source": "丙型肝炎防治指南（2022年版）.pdf",
+    "question": "对于CKD 4～5期合并HCV感染的患者，建议首选哪种DAAs治疗方案？",
+    "reference_answer": "首选格拉瑞韦/艾尔巴韦（基因1、4型）或索磷布韦/维帕他韦（泛基因型）。",
+    "evidence_quote": "首选格拉瑞韦/艾尔巴韦（基因1、4型），索磷布韦/维帕他韦（泛基因型）",
+    "location": "第11页，片段2"
+  },
+  {
+    "id": "grounded-03",
+    "kind": "grounded",
+    "source": "中国社区获得性肺炎诊断和治疗指南2025.docx",
+    "question": "在CAP的病原学检查中，合格的痰标本标准是什么？",
+    "reference_answer": "合格的痰标本标准为：鳞状上皮细胞<10个/低倍视野，多核白细胞>25个/低倍视野。",
+    "evidence_quote": "合格的痰标本标准为：鳞状上皮细胞<10个/低倍视野，多核白细胞>25个/低倍视野。",
+    "location": "[文档片段 4]"
+  },
+  {
+    "id": "grounded-04",
+    "kind": "grounded",
+    "source": "中国社区获得性肺炎诊断和治疗指南2025.docx",
+    "question": "对于门诊轻症CAP患者，青壮年、无基础疾病患者推荐选用哪些抗菌药物？",
+    "reference_answer": "推荐选用青霉素类（如阿莫西林）、多西环素、米诺环素、大环内酯类抗生素（如阿奇霉素、克拉霉素）或呼吸喹诺酮类药物（如左氧氟沙星、莫西沙星）。",
+    "evidence_quote": "推荐选用青霉素类（如阿莫西林）、多西环素、米诺环素、大环内酯类抗生素（如阿奇霉素、克拉霉素）或呼吸喹诺酮类药物（如左氧氟沙星、莫西沙星）。",
+    "location": "[文档片段 8]"
+  },
+  {
+    "id": "grounded-05",
+    "kind": "grounded",
+    "source": "原发性胆汁性胆管炎诊疗指南（2025年版）.pdf",
+    "question": "诊断PBC需满足哪三条标准中的两条？",
+    "reference_answer": "（1）存在胆汁淤积的生化证据（主要是ALP和GGT升高），且影像学检查排除了肝外或肝内大胆管梗阻；（2）AMA/A...",
+    "evidence_quote": "满足以下3条标准中的2条即可诊断：（1）存在胆汁淤积的生化证据（主要是ALP和GGT升高），且影像学检查排除了肝外或肝内大胆管梗阻；（2）AMA/A",
+    "location": "第2页，片段2"
+  },
+  {
+    "id": "grounded-06",
+    "kind": "grounded",
+    "source": "慢性乙型肝炎防治指南（2022年版）.pdf",
+    "question": "在初治CHB患者中，ETV 5年累积耐药发生率是多少？",
+    "reference_answer": "1.2%",
+    "evidence_quote": "在初治 CHB 患者中 ， ETV 5 年 累积耐药发生率为 1 . 2 %",
+    "location": "第9页，片段1"
+  },
+  {
+    "id": "grounded-07",
+    "kind": "grounded",
+    "source": "慢性乙型肝炎防治指南（2022年版）.pdf",
+    "question": "TDF在临床研究中8年累积耐药发生率是多少？",
+    "reference_answer": "0",
+    "evidence_quote": "TDF 耐药率极低 ， 在临床 研究中 8 年累积耐药发生率为 0",
+    "location": "第9页，片段1"
+  },
+  {
+    "id": "grounded-08",
+    "kind": "grounded",
+    "source": "慢性阻塞性肺疾病急性加重诊治中国专家共识(2023年修订版).pdf",
+    "question": "AECOPD患者氧疗后满意的氧合水平标准是什么？",
+    "reference_answer": "PaO2 >60 mmHg 或 SpO2 >90%。",
+    "evidence_quote": "无严重并发症的 AECOPD 患者氧疗后易达到满意的氧合水平 (PaO2 >60 mmHg 或 SpO2 >90%)。",
+    "location": "第6页，片段2"
+  },
+  {
+    "id": "grounded-09",
+    "kind": "grounded",
+    "source": "慢性阻塞性肺疾病急性加重诊治中国专家共识(2023年修订版).pdf",
+    "question": "AECOPD患者出院标准中关于临床症状与动脉血气分析（ABG）稳定的时间要求是什么？",
+    "reference_answer": "临床症状与ABG稳定12~24h或以上。",
+    "evidence_quote": "临床症状与 ABG 稳定12~24h或以 上;",
+    "location": "第12页，片段1"
+  }
+]
