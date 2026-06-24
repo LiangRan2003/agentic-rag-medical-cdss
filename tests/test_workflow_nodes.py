@@ -41,6 +41,38 @@ def test_grade_documents_filters_irrelevant_context(monkeypatch):
     assert result["web_search"] == "Yes"
 
 
+def test_grade_documents_keeps_all_relevant_context(monkeypatch):
+    monkeypatch.setattr(workflow, "get_llm", lambda: object())
+    workflow.PromptTemplate.responder = staticmethod(lambda inputs: "yes")
+    docs = [Document("guideline A"), Document("guideline B")]
+
+    result = workflow.grade_documents({"question": "treatment?", "documents": docs})
+
+    assert result["documents"] == docs
+    assert result["web_search"] == "No"
+
+
+def test_grade_documents_removes_all_irrelevant_context(monkeypatch):
+    monkeypatch.setattr(workflow, "get_llm", lambda: object())
+    workflow.PromptTemplate.responder = staticmethod(lambda inputs: "no")
+
+    result = workflow.grade_documents(
+        {"question": "treatment?", "documents": [Document("billing"), Document("weather")]}
+    )
+
+    assert result["documents"] == []
+    assert result["web_search"] == "Yes"
+
+
+def test_retrieve_handles_empty_result_set():
+    retriever = FakeRetriever([])
+
+    result = workflow.retrieve({"question": "rare condition"}, retriever)
+
+    assert result["documents"] == []
+    assert result["question"] == "rare condition"
+
+
 def test_check_hallucination_routes_supported_and_unsupported(monkeypatch):
     monkeypatch.setattr(workflow, "get_llm", lambda: object())
     state = {

@@ -1,37 +1,30 @@
-# Test Report
+# 测试报告
 
-## Summary
+## 测试结论
 
-Added a deterministic pytest suite for the Agentic RAG workflow. The tests use lightweight mocks for LangChain and LangGraph so the workflow logic can be validated without downloading models, calling DeepSeek, or building the Chroma vector store.
+已为 Agentic RAG 医疗辅助决策工作流建立确定性 pytest 测试。通过轻量 mock 隔离 LangChain、LangGraph 和模型服务，不下载模型、不访问 DeepSeek，也不依赖 Chroma 向量库。
 
-## What Is Covered
+## 覆盖范围
 
-- Retriever node passes the user question to the retriever and returns the retrieved documents.
-- Document grading filters irrelevant documents and marks when further search may be needed.
-- Hallucination-check routing returns:
-  - `useful` for supported answers.
-  - `not supported` for unsupported answers.
-- Workflow graph construction registers the expected nodes, edges, and conditional routing.
+- 检索节点正确传递用户问题并返回文档。
+- 检索器返回空结果时工作流保持稳定。
+- 文档评分覆盖“部分相关”“全部相关”“全部不相关”三类路由。
+- 无关文档会被过滤，并正确设置后续检索标记。
+- 幻觉检查可区分有依据回答与无依据回答。
+- 工作流图包含预期节点、普通边和条件路由。
 
-## Why This Matters
+## 成果价值
 
-The project is an agentic RAG system where correctness depends on routing between retrieval, grading, generation, and validation. These tests exercise the control-flow logic directly while avoiding external model calls, making them fast enough for local development and CI.
+RAG 系统的关键不只是模型回答，还包括检索、过滤、生成和校验之间的控制流。测试固定了这些路由规则，使节点调整后出现的上下文丢失、误过滤和错误循环能够被及时发现。
 
-## Verification
+## 验证方式
 
-Command:
+    python -m pytest -q
 
-```powershell
-python -m pytest -q
-```
+测试结果：7 passed
 
-Result:
+## 测试文件
 
-```text
-4 passed
-```
+- tests/conftest.py
+- tests/test_workflow_nodes.py
 
-## Files Added
-
-- `tests/conftest.py`
-- `tests/test_workflow_nodes.py`
